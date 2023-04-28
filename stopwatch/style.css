@@ -43,16 +43,34 @@ button{
     font-size: 24px;
     padding: 10px 20px;
     margin:10px;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
-    border-color: none;
-    
+    border-color: #ffffff;
+    background-color: #ffffff;
 }
 
 p{
     margin-top: 10px;
 }
 
-button:hover{
-    transition: translate(5px, 5px);
+
+
+.start{
+    background-color: #2ecc70;
+    color: #ffffff;
+    box-shadow:inset 1px 1px #222,inset 4px 4px #22222227,2px 2px #E91E63, 4px 4px #03A9F4 , #2ecc71 6px 6px ;
 }
+
+.stop{
+    background-color: #E91E63;
+    color: #ffffff;
+    box-shadow:inset 1px 1px #222,inset 4px 4px #22222227, #2ecc71 2px 2px, 4px 4px #03A9F4 ,6px 6px #E91E63;
+}
+
+.reset{
+    background-color: #03A9F4;
+    color: #ffffff;
+    box-shadow:inset 1px 1px #222,inset 4px 4px #22222227,2px 2px #E91E63, #2ecc71 4px 4px , 6px 6px #03A9F4  ;
+}
+
