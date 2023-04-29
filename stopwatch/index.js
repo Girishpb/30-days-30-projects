@@ -12,9 +12,11 @@ function start(){
         const elapsedTime =(Date.now()-startTime)/1000;
         const sec= Math.floor(elapsedTime%60);
         const minutes = Math.floor(elapsedTime/60);
+        const min =Math.floor(minutes%60)
         const hours = Math.floor(minutes/60);
+        
        //HH:MM:SS 
-        const formattedTime = `${pad(hours)}: ${pad(minutes)}: ${pad(sec)}`;
+        const formattedTime = `${pad(hours)}: ${pad(min)}: ${pad(sec)}`;
 
         display.textContent = formattedTime;
 
